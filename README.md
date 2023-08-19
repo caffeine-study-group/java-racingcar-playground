@@ -28,7 +28,8 @@ ex) git checkout -b apply-feedback
 --- 
 ## 기능 요구사항
 - [ ] Car Instance 추가
-  - [ ] 자동차 이름 입력 받기(자동차이름은 쉼표를 기준으로 구분)  
+  - [ ] 자동차 이름 입력 받기(자동차이름은 쉼표를 기준으로 구분)
+  - [ ] Car Instance 추가
   - [x] Car Name Instance 추가 (자동차 이름 null, 공백, 5자 초과 불가)
 - [ ] 시도 횟수 입력
 - [ ] 게임시작

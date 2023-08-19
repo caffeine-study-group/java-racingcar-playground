@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 public class CarNameTest {
@@ -25,4 +29,5 @@ public class CarNameTest {
         }).isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("[ERROR] 자동차의 이름이 올바르지 않습니다.");
     }
+
 }
