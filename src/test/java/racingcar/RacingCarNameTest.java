@@ -4,13 +4,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
-public class CarNameTest {
+public class RacingCarNameTest {
 
     @Test
     void 자동차_이름_5자_초과_불가_테스트() {

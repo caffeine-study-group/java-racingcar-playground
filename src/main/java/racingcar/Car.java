@@ -1,11 +1,9 @@
 package racingcar;
 
-public class Car {
+import racingcar.action.Action;
 
-    private final CarName carName;
+public interface Car {
+    void move(Action action);
 
-    public Car(CarName carName){
-        this.carName = carName;
-    }
-
+    Location getLocation();
 }
