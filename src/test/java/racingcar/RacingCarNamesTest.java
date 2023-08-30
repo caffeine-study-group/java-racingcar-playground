@@ -1,6 +1,7 @@
 package racingcar;
 
 import org.junit.jupiter.api.Test;
+import racingcar.domain.CarNames;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 

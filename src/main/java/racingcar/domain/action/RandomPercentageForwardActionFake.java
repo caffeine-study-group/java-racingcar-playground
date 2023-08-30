@@ -1,4 +1,4 @@
-package racingcar.action;
+package racingcar.domain.action;
 
 public class RandomPercentageForwardActionFake extends RandomPercentageForwardAction {
 

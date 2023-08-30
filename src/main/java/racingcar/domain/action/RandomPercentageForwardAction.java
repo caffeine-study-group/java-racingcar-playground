@@ -1,6 +1,6 @@
-package racingcar.action;
+package racingcar.domain.action;
 
-import racingcar.Location;
+import racingcar.domain.Location;
 
 import java.util.Random;
 

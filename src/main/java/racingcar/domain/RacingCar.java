@@ -1,6 +1,6 @@
-package racingcar;
+package racingcar.domain;
 
-import racingcar.action.Action;
+import racingcar.domain.action.Action;
 
 public class RacingCar implements Car {
 

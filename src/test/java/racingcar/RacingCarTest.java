@@ -2,10 +2,14 @@ package racingcar;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import racingcar.action.ForwardAction;
-import racingcar.action.RandomPercentageForwardAction;
-import racingcar.action.RandomPercentageForwardActionFake;
-import racingcar.action.StopAction;
+import racingcar.domain.action.ForwardAction;
+import racingcar.domain.action.RandomPercentageForwardAction;
+import racingcar.domain.action.RandomPercentageForwardActionFake;
+import racingcar.domain.action.StopAction;
+import racingcar.domain.Car;
+import racingcar.domain.CarName;
+import racingcar.domain.Location;
+import racingcar.domain.RacingCar;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;

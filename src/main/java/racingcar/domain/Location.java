@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.domain;
 
 public class Location {
     private int location;
