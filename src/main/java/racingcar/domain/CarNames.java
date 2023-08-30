@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CarNames {
     private static final String CAR_NAME_SEPARATOR = ",";
-    List<CarName> list;
+    private final List<CarName> list;
 
     private CarNames(List<CarName> list) {
         this.list = list;

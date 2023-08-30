@@ -2,14 +2,7 @@ package racingcar.domain;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import racingcar.domain.action.ForwardAction;
-import racingcar.domain.action.RandomPercentageForwardAction;
-import racingcar.domain.action.RandomPercentageForwardActionFake;
-import racingcar.domain.action.StopAction;
-import racingcar.domain.Car;
-import racingcar.domain.CarName;
-import racingcar.domain.Location;
-import racingcar.domain.RacingCar;
+import racingcar.domain.action.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -45,7 +38,7 @@ public class RacingCarTest {
 
     @Test
     void 자동차의_랜덤_동작을_테스트() {
-        RandomPercentageForwardAction randomPercentageForwardAction = new RandomPercentageForwardActionFake();
+        Action randomPercentageForwardAction = new RandomPercentageForwardActionFake();
         car.move(randomPercentageForwardAction);
         assertEquals(new Location(0), car.getLocation());
         car.move(randomPercentageForwardAction);

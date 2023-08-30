@@ -22,4 +22,11 @@ public class Location {
         Location location1 = (Location) o;
         return location == location1.location;
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "location=" + location +
+                '}';
+    }
 }
