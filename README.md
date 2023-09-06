@@ -33,6 +33,7 @@ ex) git checkout -b apply-feedback
   - [x] Car Instance 추가
   - [x] Car Names 추가
   - [x] Car Location 추가
+  - [x] Lap 추가
   - [x] Car Name Instance 추가 (자동차 이름 null, 공백, 5자 초과 불가)
 - [x] 시도 횟수 입력
 - [ ] 게임시작
