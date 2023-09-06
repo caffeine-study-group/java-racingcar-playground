@@ -26,4 +26,20 @@ public class Cars {
         return carList.get(index);
     }
 
+    public CarNames findWinners() {
+        Location topRecord = findLocation();
+        String winners = carList.stream().filter(car -> topRecord.equals(car.getLocation())).map(car -> car.getCarName().getCarName()).collect(Collectors.joining(","));
+        return CarNames.from(winners);
+    }
+
+    private Location findLocation() {
+        return new Location(
+                carList.stream()
+                    .mapToInt(
+                        car -> car.getLocation().getLocation()
+                    )
+                    .max()
+                    .getAsInt()
+                );
+    }
 }
