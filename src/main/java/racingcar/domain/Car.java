@@ -6,4 +6,6 @@ public interface Car {
     void move(Action action);
 
     Location getLocation();
+
+    CarName getCarName();
 }

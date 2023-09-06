@@ -24,4 +24,9 @@ public class RacingCar implements Car {
     public Location getLocation() {
         return location;
     }
+
+    @Override
+    public CarName getCarName() {
+        return this.carName;
+    }
 }
