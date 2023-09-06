@@ -2,6 +2,7 @@ package racingcar.domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CarNames {
     private static final String CAR_NAME_SEPARATOR = ",";
@@ -21,5 +22,10 @@ public class CarNames {
 
     public List<CarName> getList() {
         return list;
+    }
+
+    @Override
+    public String toString() {
+        return list.stream().map(CarName::getCarName).collect(Collectors.joining(","));
     }
 }
