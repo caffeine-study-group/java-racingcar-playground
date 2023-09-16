@@ -18,8 +18,8 @@ public class ResultView {
         System.out.println(EXECUTE_RESULT_MESSAGE);
     }
 
-    public void printProcessMessage(String racingCarName, String processBar) {
-        System.out.printf((PROCESS_MESSAGE) + "%n", racingCarName, processBar);
+    public void printProcessMessage(Car car, String processBar) {
+        System.out.printf((PROCESS_MESSAGE) + "%n", car.getCarName(), processBar);
     }
 
     public void printGameResult(CarNames racingCarName) {
@@ -28,7 +28,7 @@ public class ResultView {
 
     public void printCurrentGrid(Cars cars) {
         for (Car car : cars.getCarList()) {
-            this.printProcessMessage(car.getCarName().getCarName(), this.printProcessBar(car.getLocation()));
+            this.printProcessMessage(car, this.printProcessBar(car.getLocation()));
         }
         this.printEnter();
     }

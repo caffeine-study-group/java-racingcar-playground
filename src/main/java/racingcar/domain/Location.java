@@ -15,6 +15,18 @@ public class Location {
         return location;
     }
 
+    public Location getMaxLocation(Location maxLocation) {
+        if (maxLocation.moreThan(location)) {
+            return this;
+        }
+
+        return maxLocation;
+    }
+
+    private boolean moreThan(int location) {
+        return this.location > location;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
